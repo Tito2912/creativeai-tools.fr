@@ -1,0 +1,147 @@
+# ==========================================================================
+# Configuration Netlify - CreativeAI Tools
+# ==========================================================================
+
+[build]
+  publish = "."
+  command = "echo 'No build command needed - static site'"
+
+[build.environment]
+  NODE_VERSION = "18"
+  NPM_VERSION = "9"
+
+# ==========================================================================
+# En-têtes de sécurité et performances
+# ==========================================================================
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Sécurité
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()"
+    
+    # Performances
+    Cache-Control = "public, max-age=3600, s-maxage=86400"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+    # Cache 1 an pour les assets versionnés
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000, stale-while-revalidate=86400"
+    # Cache 30 jours pour les images
+
+[[headers]]
+  for = "*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=3600, s-maxage=7200"
+    # Cache plus court pour le HTML
+
+# ==========================================================================
+# Politique de sécurité des contenus (CSP)
+# ==========================================================================
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = '''
+      default-src 'self';
+      script-src 'self' 
+        'unsafe-inline' 
+        https://www.googletagmanager.com 
+        https://www.google-analytics.com 
+        https://translate.googleapis.com 
+        https://translate.google.com 
+        https://script.google.com 
+        https://script.googleusercontent.com 
+        https://www.gstatic.com 
+        https://www.google.com 
+        https://apis.google.com;
+      style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+      img-src 'self' 
+        data: 
+        https: 
+        https://i.ytimg.com 
+        https://www.googletagmanager.com 
+        https://www.google-analytics.com 
+        https://stats.g.doubleclick.net;
+      font-src 'self' https://fonts.gstatic.com;
+      connect-src 'self' 
+        https://www.google-analytics.com 
+        https://www.googletagmanager.com 
+        https://region1.google-analytics.com 
+        https://script.google.com 
+        https://script.googleusercontent.com 
+        https://translate.googleapis.com;
+      frame-src 
+        https://www.youtube-nocookie.com 
+        https://www.google.com 
+        https://consent.youtube.com;
+      media-src 'self' blob: https:;
+      object-src 'none';
+      base-uri 'self';
+      form-action 'self' 
+        https://invideo.sjv.io 
+        https://script.google.com;
+      upgrade-insecure-requests;
+    '''
+    
+    # Headers HSTS
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+
+# ==========================================================================
+# Redirections (gérées principalement via _redirects)
+# ==========================================================================
+
+[[redirects]]
+  from = "/blog"
+  to = "/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/blog"
+  to = "/fr/blog/"
+  status = 301
+  force = true
+
+# ==========================================================================
+# Paramètres de fonctionnalités Netlify
+# ==========================================================================
+
+[functions]
+  directory = "./netlify/functions"
+
+# Compression activée par défaut
+[context.production.environment]
+  AWS_LAMBDA_JS_RUNTIME = "nodejs18.x"
+
+# ==========================================================================
+# Paramètres de déploiement
+# ==========================================================================
+
+[context.deploy-preview]
+  command = "echo 'Deploy preview - no special build'"
+
+[context.branch-deploy]
+  command = "echo 'Branch deploy - no special build'"
+
+# ==========================================================================
+# Paramètres de traitement des formulaires
+# ==========================================================================
+
+[context.production]
+  [context.production.environment]
+    NEWSLETTER_SCRIPT_URL = "https://script.google.com/macros/s/PRODUCTION_SCRIPT_ID/exec"
+
+[context.deploy-preview]
+  [context.deploy-preview.environment]
+    NEWSLETTER_SCRIPT_URL = "https://script.google.com/macros/s/TEST_SCRIPT_ID/exec"

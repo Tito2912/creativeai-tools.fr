@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Homepage - Highest priority -->
+  <url>
+    <loc>https://creativeai-tools.fr/</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://creativeai-tools.fr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://creativeai-tools.fr/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://creativeai-tools.fr/fr/"/>
+    <lastmod>2025-09-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Blog hub -->
+  <url>
+    <loc>https://creativeai-tools.fr/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://creativeai-tools.fr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://creativeai-tools.fr/fr/blog/"/>
+    <lastmod>2025-09-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog article: InVideo AI Review -->
+  <url>
+    <loc>https://creativeai-tools.fr/blog/invideo-ai-review/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://creativeai-tools.fr/blog/invideo-ai-review/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://creativeai-tools.fr/fr/blog/avis-invideo-ai/"/>
+    <lastmod>2025-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://creativeai-tools.fr/images/visual-2.avif</image:loc>
+      <image:title>InVideo AI Interface Review</image:title>
+      <image:caption>Complete review of InVideo AI video creation platform</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://creativeai-tools.fr/images/capture-ecran.avif</image:loc>
+      <image:title>InVideo AI Script Generator</image:title>
+    </image:image>
+    <news:news>
+      <news:publication>
+        <news:name>CreativeAI Tools</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-09-01</news:publication_date>
+      <news:title>InVideo AI Review: Create Professional Videos 10x Faster</news:title>
+      <news:keywords>AI video, InVideo, video creation, artificial intelligence</news:keywords>
+    </news:news>
+  </url>
+
+  <!-- Legal pages -->
+  <url>
+    <loc>https://creativeai-tools.fr/legal-notice/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://creativeai-tools.fr/legal-notice/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://creativeai-tools.fr/fr/mentions-legales/"/>
+    <lastmod>2025-09-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+
+  <url>
+    <loc>https://creativeai-tools.fr/privacy-policy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://creativeai-tools.fr/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://creativeai-tools.fr/fr/politique-de-confidentialite/"/>
+    <lastmod>2025-09-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+
+</urlset>

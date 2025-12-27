@@ -1,0 +1,59 @@
+# ==========================================================================
+# Redirections Netlify - CreativeAI Tools
+# ==========================================================================
+
+# Redirection HTTPS canonique
+http://creativeai-tools.fr/* https://creativeai-tools.fr/:splat 301!
+http://www.creativeai-tools.fr/* https://creativeai-tools.fr/:splat 301!
+https://www.creativeai-tools.fr/* https://creativeai-tools.fr/:splat 301!
+
+# Redirections de langue basées sur l'en-tête Accept-Language (optionnel)
+# /                                            /fr/  302! Language=fr
+# /                                            /     302! Language=en
+
+# Pages légales anglaises
+/legal         /legal-notice.html          301
+/privacy       /privacy-policy.html        301
+/terms         /legal-notice.html          301
+
+# Pages légales françaises
+/fr/legal      /fr/mentions-legales.html   301
+/fr/privacy    /fr/politique-de-confidentialite.html  301
+/fr/terms      /fr/mentions-legales.html   301
+
+# Redirections d'URLs courantes
+/features      /#features                  301
+/pricing       https://invideo.sjv.io/3JrYry  301
+/fr/tarifs     https://invideo.sjv.io/3JrYry  301
+
+# Blog - redirections d'URLs anciennes
+/blog/invideo-review       /blog/invideo-ai-review.html      301
+/fr/blog/avis-invideo      /fr/blog/avis-invideo-ai.html     301
+
+# Sitemaps
+/sitemap                    /sitemap.xml                    200
+/sitemap_en                /sitemaps/sitemap-en.xml        200
+/sitemap_fr                /sitemaps/sitemap-fr.xml        200
+
+# Gestion des erreurs 404
+/*                          /404.html                       404
+
+# ==========================================================================
+# Redirections pour les assets versionnés (cache long)
+# ==========================================================================
+
+/assets/main-:hash.js      /assets/main.js                 200! Cache-Control=public, max-age=31536000, immutable
+/assets/styles-:hash.css   /assets/styles.css              200! Cache-Control=public, max-age=31536000, immutable
+
+# ==========================================================================
+# Proxy pour l'Apps Script (optionnel - si besoin de masquer l'URL)
+# ==========================================================================
+
+# /api/newsletter           https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec  200
+
+# ==========================================================================
+# Redirections de secours pour les URLs sans trailing slash
+# ==========================================================================
+
+/blog/         /blog/index.html        200
+/fr/blog/      /fr/blog/index.html     200

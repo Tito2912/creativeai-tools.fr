@@ -57,7 +57,7 @@
       "description": "Plateforme de création vidéo alimentée par l'IA",
       "url": "https://invideo.io/",
       "image": [
-        "https://creativeai-tools.fr/images/capture-hero.png",
+        "https://creativeai-tools.fr/images/capture-hero.webp",
         "https://creativeai-tools.fr/images/capture-ugc.png",
         "https://creativeai-tools.fr/images/capture-short.png"
       ],
@@ -195,11 +195,13 @@
                         </div>
                     </div>
 
-                    <div class="hero-visual">
-                        <picture>
-                            <img src="/images/capture-hero.png" alt="Interface InVideo AI montrant le tableau de bord de création vidéo" width="600" height="400" loading="eager" fetchpriority="high" decoding="async">
-                        </picture>
-                    </div>
+	                    <div class="hero-visual">
+	                        <picture>
+	                            <source srcset="/images/capture-hero.avif" type="image/avif">
+	                            <source srcset="/images/capture-hero.webp" type="image/webp">
+	                            <img src="/images/capture-hero.webp" alt="Interface InVideo AI montrant le tableau de bord de création vidéo" width="600" height="400" loading="eager" fetchpriority="high" decoding="async">
+	                        </picture>
+	                    </div>
                 </div>
             </div>
         </section>
@@ -321,7 +323,7 @@
                         <picture>
                             <source srcset="/images/capture-ecran-dashboard.avif" type="image/avif">
                             <source srcset="/images/capture-ecran-dashboard.webp" type="image/webp">
-                            <img src="/images/capture-ecran-dashboard.png" alt="Tableau de bord de personnalisation des scènes InVideo AI" loading="lazy" decoding="async">
+	                            <img src="/images/capture-ecran-dashboard.webp" alt="Tableau de bord de personnalisation des scènes InVideo AI" loading="lazy" decoding="async">
                         </picture>
                     </div>
 
@@ -433,12 +435,14 @@
                         <figcaption>Video UGC IA</figcaption>
                     </figure>
 
-                    <figure class="gallery-item">
-                        <picture>
-                            <img src="/images/capture-hero.png" alt="Tableau de bord montage vidéo InVideo AI" loading="lazy" decoding="async">
-                        </picture>
-                        <figcaption>Bibliothèque de modèles</figcaption>
-                    </figure>
+	                    <figure class="gallery-item">
+	                        <picture>
+	                            <source srcset="/images/capture-hero.avif" type="image/avif">
+	                            <source srcset="/images/capture-hero.webp" type="image/webp">
+	                            <img src="/images/capture-hero.webp" alt="Tableau de bord montage vidéo InVideo AI" loading="lazy" decoding="async">
+	                        </picture>
+	                        <figcaption>Bibliothèque de modèles</figcaption>
+	                    </figure>
 
                     <figure class="gallery-item">
                         <picture>
@@ -483,7 +487,7 @@
                             </button>
                             
                             <p class="consent-notice">
-                                En vous inscrivant, vous acceptez notre <a href="/fr/politique-de-confidentialite.html">Politique de confidentialité</a>. 
+                                En vous inscrivant, vous acceptez notre <a href="/fr/politique-de-confidentialite">Politique de confidentialité</a>. 
                                 Désinscription à tout moment.
                             </p>
                         </form>
@@ -607,7 +611,7 @@
                         <h4>Ressources</h4>
                         <ul>
                             <li><a href="/fr/blog/">Blog</a></li>
-                            <li><a href="/fr/blog/avis-invideo-ai/">Avis complet</a></li>
+                            <li><a href="/fr/blog/avis-invideo-ai">Avis complet</a></li>
                             <li><a href="#faq">FAQ</a></li>
                         </ul>
                     </div>
@@ -615,9 +619,9 @@
                     <div class="footer-nav-column">
                         <h4>Légal</h4>
                         <ul>
-                            <li><a href="/fr/politique-de-confidentialite.html">Politique de confidentialité</a></li>
-                            <li><a href="/fr/mentions-legales.html">Mentions légales</a></li>
-                            <li><a href="/fr/politique-de-confidentialite.html#cookies">Politique cookies</a></li>
+                            <li><a href="/fr/politique-de-confidentialite">Politique de confidentialité</a></li>
+                            <li><a href="/fr/mentions-legales">Mentions légales</a></li>
+                            <li><a href="/fr/politique-de-confidentialite#cookies">Politique cookies</a></li>
                         </ul>
                     </div>
                 </nav>

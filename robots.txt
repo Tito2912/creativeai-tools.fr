@@ -14,12 +14,6 @@ Disallow: /.netlify/
 Disallow: /_redirects
 Disallow: /_headers
 
-# Pages à éviter (optionnel)
-Disallow: /fr/mentions-legales.html
-Disallow: /fr/politique-de-confidentialite.html
-Disallow: /legal-notice.html
-Disallow: /privacy-policy.html
-
 # Paramètres d'URL à éviter
 Disallow: /*?utm_
 Disallow: /*?ref=

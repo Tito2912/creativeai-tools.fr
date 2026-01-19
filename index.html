@@ -58,7 +58,7 @@
       "description": "AI-powered video creation platform",
       "url": "https://invideo.io/",
       "image": [
-        "https://creativeai-tools.fr/images/capture-hero.png",
+        "https://creativeai-tools.fr/images/capture-hero.webp",
         "https://creativeai-tools.fr/images/capture-ugc.png",
         "https://creativeai-tools.fr/images/capture-short.png"
       ],
@@ -197,11 +197,13 @@
                         </div>
                     </div>
 
-                    <div class="hero-visual">
-                        <picture>
-                            <img src="/images/capture-hero.png" alt="InVideo AI interface showing video creation dashboard" width="600" height="400" loading="eager" fetchpriority="high" decoding="async">
-                        </picture>
-                    </div>
+	                    <div class="hero-visual">
+	                        <picture>
+	                            <source srcset="/images/capture-hero.avif" type="image/avif">
+	                            <source srcset="/images/capture-hero.webp" type="image/webp">
+	                            <img src="/images/capture-hero.webp" alt="InVideo AI interface showing video creation dashboard" width="600" height="400" loading="eager" fetchpriority="high" decoding="async">
+	                        </picture>
+	                    </div>
                 </div>
             </div>
         </section>
@@ -323,7 +325,7 @@
                         <picture>
                             <source srcset="/images/capture-ecran-dashboard.avif" type="image/avif">
                             <source srcset="/images/capture-ecran-dashboard.webp" type="image/webp">
-                            <img src="/images/capture-ecran-dashboard.png" alt="InVideo AI scene customization dashboard" loading="lazy" decoding="async">
+	                            <img src="/images/capture-ecran-dashboard.webp" alt="InVideo AI scene customization dashboard" loading="lazy" decoding="async">
                         </picture>
                     </div>
 
@@ -434,12 +436,14 @@
                         <figcaption>AI UGC Video</figcaption>
                     </figure>
 
-                    <figure class="gallery-item">
-                        <picture>
-                            <img src="/images/capture-hero.png" alt="InVideo AI video editing dashboard" loading="lazy" decoding="async">
-                        </picture>
-                        <figcaption>Template Library</figcaption>
-                    </figure>
+	                    <figure class="gallery-item">
+	                        <picture>
+	                            <source srcset="/images/capture-hero.avif" type="image/avif">
+	                            <source srcset="/images/capture-hero.webp" type="image/webp">
+	                            <img src="/images/capture-hero.webp" alt="InVideo AI video editing dashboard" loading="lazy" decoding="async">
+	                        </picture>
+	                        <figcaption>Template Library</figcaption>
+	                    </figure>
 
                     <figure class="gallery-item">
                         <picture>
@@ -484,7 +488,7 @@
                             </button>
                             
                             <p class="consent-notice">
-                                By subscribing, you agree to our <a href="/privacy-policy.html">Privacy Policy</a>. 
+                                By subscribing, you agree to our <a href="/privacy-policy">Privacy Policy</a>. 
                                 Unsubscribe anytime.
                             </p>
                         </form>
@@ -608,7 +612,7 @@
                         <h4>Resources</h4>
                         <ul>
                             <li><a href="/blog/">Blog</a></li>
-                            <li><a href="/blog/invideo-ai-review/">Full Review</a></li>
+                            <li><a href="/blog/invideo-ai-review">Full Review</a></li>
                             <li><a href="#faq">FAQ</a></li>
                         </ul>
                     </div>
@@ -616,9 +620,9 @@
                     <div class="footer-nav-column">
                         <h4>Legal</h4>
                         <ul>
-                            <li><a href="/privacy-policy.html">Privacy Policy</a></li>
-                            <li><a href="/legal-notice.html">Legal Notice</a></li>
-                            <li><a href="/privacy-policy.html#cookies">Cookie Policy</a></li>
+                            <li><a href="/privacy-policy">Privacy Policy</a></li>
+                            <li><a href="/legal-notice">Legal Notice</a></li>
+                            <li><a href="/privacy-policy#cookies">Cookie Policy</a></li>
                         </ul>
                     </div>
                 </nav>

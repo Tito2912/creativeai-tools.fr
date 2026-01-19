@@ -12,14 +12,14 @@ https://www.creativeai-tools.fr/* https://creativeai-tools.fr/:splat 301!
 # /                                            /     302! Language=en
 
 # Pages légales anglaises
-/legal         /legal-notice.html          301
-/privacy       /privacy-policy.html        301
-/terms         /legal-notice.html          301
+/legal         /legal-notice              301
+/privacy       /privacy-policy            301
+/terms         /legal-notice              301
 
 # Pages légales françaises
-/fr/legal      /fr/mentions-legales.html   301
-/fr/privacy    /fr/politique-de-confidentialite.html  301
-/fr/terms      /fr/mentions-legales.html   301
+/fr/legal      /fr/mentions-legales        301
+/fr/privacy    /fr/politique-de-confidentialite  301
+/fr/terms      /fr/mentions-legales        301
 
 # Redirections d'URLs courantes
 /features      /#features                  301
@@ -27,8 +27,18 @@ https://www.creativeai-tools.fr/* https://creativeai-tools.fr/:splat 301!
 /fr/tarifs     https://invideo.sjv.io/3JrYry  301
 
 # Blog - redirections d'URLs anciennes
-/blog/invideo-review       /blog/invideo-ai-review.html      301
-/fr/blog/avis-invideo      /fr/blog/avis-invideo-ai.html     301
+/blog/invideo-review       /blog/invideo-ai-review           301
+/fr/blog/avis-invideo      /fr/blog/avis-invideo-ai          301
+
+# Normalisation des URLs (évite les doublons .html)
+/privacy-policy.html                /privacy-policy                 301
+/legal-notice.html                  /legal-notice                   301
+/fr/politique-de-confidentialite.html /fr/politique-de-confidentialite 301
+/fr/mentions-legales.html           /fr/mentions-legales            301
+/blog/invideo-ai-review.html        /blog/invideo-ai-review         301
+/fr/blog/avis-invideo-ai.html       /fr/blog/avis-invideo-ai        301
+/blog/invideo-ai-update-2025.html   /blog/invideo-ai-update-2025    301
+/fr/blog/mise-a-jour-invideo-2025.html /fr/blog/mise-a-jour-invideo-2025 301
 
 # Sitemaps
 /sitemap                    /sitemap.xml                    200
@@ -36,20 +46,6 @@ https://www.creativeai-tools.fr/* https://creativeai-tools.fr/:splat 301!
 /sitemap_fr                /sitemaps/sitemap-fr.xml        200
 
 # Gestion des erreurs 404
-/*                          /404.html                       404
-
-# ==========================================================================
-# Redirections pour les assets versionnés (cache long)
-# ==========================================================================
-
-/assets/main-:hash.js      /assets/main.js                 200! Cache-Control=public, max-age=31536000, immutable
-/assets/styles-:hash.css   /assets/styles.css              200! Cache-Control=public, max-age=31536000, immutable
-
-# ==========================================================================
-# Proxy pour l'Apps Script (optionnel - si besoin de masquer l'URL)
-# ==========================================================================
-
-# /api/newsletter           https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec  200
 
 # ==========================================================================
 # Redirections de secours pour les URLs sans trailing slash
@@ -57,3 +53,6 @@ https://www.creativeai-tools.fr/* https://creativeai-tools.fr/:splat 301!
 
 /blog/         /blog/index.html        200
 /fr/blog/      /fr/blog/index.html     200
+
+# Gestion des erreurs 404 (à garder en dernier)
+/*                          /404.html                       404

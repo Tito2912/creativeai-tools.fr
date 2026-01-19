@@ -123,6 +123,7 @@
 # Compression activée par défaut
 [context.production.environment]
   AWS_LAMBDA_JS_RUNTIME = "nodejs18.x"
+  NEWSLETTER_SCRIPT_URL = "https://script.google.com/macros/s/PRODUCTION_SCRIPT_ID/exec"
 
 # ==========================================================================
 # Paramètres de déploiement
@@ -131,17 +132,9 @@
 [context.deploy-preview]
   command = "echo 'Deploy preview - no special build'"
 
+  [context.deploy-preview.environment]
+    NEWSLETTER_SCRIPT_URL = "https://script.google.com/macros/s/TEST_SCRIPT_ID/exec"
+
 [context.branch-deploy]
   command = "echo 'Branch deploy - no special build'"
 
-# ==========================================================================
-# Paramètres de traitement des formulaires
-# ==========================================================================
-
-[context.production]
-  [context.production.environment]
-    NEWSLETTER_SCRIPT_URL = "https://script.google.com/macros/s/PRODUCTION_SCRIPT_ID/exec"
-
-[context.deploy-preview]
-  [context.deploy-preview.environment]
-    NEWSLETTER_SCRIPT_URL = "https://script.google.com/macros/s/TEST_SCRIPT_ID/exec"

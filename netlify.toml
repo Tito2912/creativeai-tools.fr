@@ -113,6 +113,12 @@
   status = 301
   force = true
 
+[[redirects]]
+  from = "http://www.creativeai-tools.fr/*"
+  to = "https://creativeai-tools.fr/:splat"
+  status = 301
+  force = true
+
 # ==========================================================================
 # Paramètres de fonctionnalités Netlify
 # ==========================================================================

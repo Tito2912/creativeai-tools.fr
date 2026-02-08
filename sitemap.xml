@@ -8,4 +8,12 @@
     <loc>https://creativeai-tools.fr/sitemaps/sitemap-fr.xml</loc>
     <lastmod>2026-01-24</lastmod>
   </sitemap>
+  <sitemap>
+    <loc>https://creativeai-tools.fr/sitemaps/sitemap-es.xml</loc>
+    <lastmod>2026-01-24</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://creativeai-tools.fr/sitemaps/sitemap-de.xml</loc>
+    <lastmod>2026-01-24</lastmod>
+  </sitemap>
 </sitemapindex>

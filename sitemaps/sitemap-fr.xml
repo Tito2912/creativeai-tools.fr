@@ -13,7 +13,10 @@
     <lastmod>2026-01-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-  </url>
+  
+    <xhtml:link rel="alternate" hreflang="es" href="https://creativeai-tools.fr/es/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://creativeai-tools.fr/de/"/>
+</url>
 
   <!-- Hub blog français -->
   <url>
@@ -23,7 +26,10 @@
     <lastmod>2025-09-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
+  
+    <xhtml:link rel="alternate" hreflang="es" href="https://creativeai-tools.fr/es/blog/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://creativeai-tools.fr/de/blog/"/>
+</url>
 
   <!-- Catégories & tags du blog -->
   <url>
@@ -31,49 +37,73 @@
     <lastmod>2026-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
-  </url>
+  
+    <xhtml:link rel="alternate" hreflang="es" href="https://creativeai-tools.fr/es/fr/blog/category/avis/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://creativeai-tools.fr/de/fr/blog/category/avis/"/>
+</url>
   <url>
     <loc>https://creativeai-tools.fr/fr/blog/category/tutoriels/</loc>
     <lastmod>2026-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
-  </url>
+  
+    <xhtml:link rel="alternate" hreflang="es" href="https://creativeai-tools.fr/es/fr/blog/category/tutoriels/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://creativeai-tools.fr/de/fr/blog/category/tutoriels/"/>
+</url>
   <url>
     <loc>https://creativeai-tools.fr/fr/blog/category/strategies/</loc>
     <lastmod>2026-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
-  </url>
+  
+    <xhtml:link rel="alternate" hreflang="es" href="https://creativeai-tools.fr/es/fr/blog/category/strategies/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://creativeai-tools.fr/de/fr/blog/category/strategies/"/>
+</url>
   <url>
     <loc>https://creativeai-tools.fr/fr/blog/category/etudes-cas/</loc>
     <lastmod>2026-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
-  </url>
+  
+    <xhtml:link rel="alternate" hreflang="es" href="https://creativeai-tools.fr/es/fr/blog/category/etudes-cas/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://creativeai-tools.fr/de/fr/blog/category/etudes-cas/"/>
+</url>
   <url>
     <loc>https://creativeai-tools.fr/fr/blog/tag/invideo/</loc>
     <lastmod>2026-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
-  </url>
+  
+    <xhtml:link rel="alternate" hreflang="es" href="https://creativeai-tools.fr/es/fr/blog/tag/invideo/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://creativeai-tools.fr/de/fr/blog/tag/invideo/"/>
+</url>
   <url>
     <loc>https://creativeai-tools.fr/fr/blog/tag/video-ia/</loc>
     <lastmod>2026-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
-  </url>
+  
+    <xhtml:link rel="alternate" hreflang="es" href="https://creativeai-tools.fr/es/fr/blog/tag/video-ia/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://creativeai-tools.fr/de/fr/blog/tag/video-ia/"/>
+</url>
   <url>
     <loc>https://creativeai-tools.fr/fr/blog/tag/avis/</loc>
     <lastmod>2026-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
-  </url>
+  
+    <xhtml:link rel="alternate" hreflang="es" href="https://creativeai-tools.fr/es/fr/blog/tag/avis/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://creativeai-tools.fr/de/fr/blog/tag/avis/"/>
+</url>
   <url>
     <loc>https://creativeai-tools.fr/fr/blog/tag/creation-contenu/</loc>
     <lastmod>2026-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
-  </url>
+  
+    <xhtml:link rel="alternate" hreflang="es" href="https://creativeai-tools.fr/es/fr/blog/tag/creation-contenu/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://creativeai-tools.fr/de/fr/blog/tag/creation-contenu/"/>
+</url>
 
   <!-- Article blog : Avis InVideo AI -->
   <url>
@@ -101,7 +131,10 @@
       <news:title>Avis InVideo AI : Créez des vidéos professionnelles 10x plus vite</news:title>
       <news:keywords>vidéo IA, InVideo, création vidéo, intelligence artificielle</news:keywords>
     </news:news>
-  </url>
+  
+    <xhtml:link rel="alternate" hreflang="es" href="https://creativeai-tools.fr/es/blog/invideo-ai-review"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://creativeai-tools.fr/de/blog/invideo-ai-review"/>
+</url>
 
   <!-- Article blog : Mise à jour InVideo AI 2025 -->
   <url>
@@ -111,7 +144,10 @@
     <lastmod>2025-02-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-  </url>
+  
+    <xhtml:link rel="alternate" hreflang="es" href="https://creativeai-tools.fr/es/blog/invideo-ai-update-2025"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://creativeai-tools.fr/de/blog/invideo-ai-update-2025"/>
+</url>
 
   <!-- Pages légales françaises -->
   <url>
@@ -121,7 +157,10 @@
     <lastmod>2025-09-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
-  </url>
+  
+    <xhtml:link rel="alternate" hreflang="es" href="https://creativeai-tools.fr/es/legal-notice"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://creativeai-tools.fr/de/legal-notice"/>
+</url>
 
   <url>
     <loc>https://creativeai-tools.fr/fr/politique-de-confidentialite</loc>
@@ -130,6 +169,9 @@
     <lastmod>2025-09-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
-  </url>
+  
+    <xhtml:link rel="alternate" hreflang="es" href="https://creativeai-tools.fr/es/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://creativeai-tools.fr/de/privacy-policy"/>
+</url>
 
 </urlset>

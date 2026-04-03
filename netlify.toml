@@ -101,24 +101,6 @@
 # Redirections (gérées principalement via _redirects)
 # ==========================================================================
 
-[[redirects]]
-  from = "/blog"
-  to = "/blog/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/fr/blog"
-  to = "/fr/blog/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "http://www.creativeai-tools.fr/*"
-  to = "https://creativeai-tools.fr/:splat"
-  status = 301
-  force = true
-
 # ==========================================================================
 # Paramètres de fonctionnalités Netlify
 # ==========================================================================

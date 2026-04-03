@@ -1,58 +1,20 @@
 # ==========================================================================
-# Redirections Netlify - CreativeAI Tools
+# creativeai-tools.fr -> creativeai-tools.com (cluster international)
+# - EN is primary on .com root (/)
+# - FR/ES/DE are under /fr/, /es/, /de/
 # ==========================================================================
 
-# Redirection HTTPS canonique
+# Canonical host + HTTPS (best effort, Netlify settings may add an extra hop)
 http://creativeai-tools.fr/* https://creativeai-tools.fr/:splat 301!
 http://www.creativeai-tools.fr/* https://creativeai-tools.fr/:splat 301!
 https://www.creativeai-tools.fr/* https://creativeai-tools.fr/:splat 301!
 
-# Redirections de langue basées sur l'en-tête Accept-Language (optionnel)
-# /                                            /fr/  302! Language=fr
-# /                                            /     302! Language=en
+# Preserve language prefixes where they exist on the .fr domain
+/es/* https://creativeai-tools.com/es/:splat 301!
+/de/* https://creativeai-tools.com/de/:splat 301!
+/en/* https://creativeai-tools.com/:splat 301!
+/fr/* https://creativeai-tools.com/fr/:splat 301!
 
-# Pages légales anglaises
-/legal         /legal-notice              301
-/privacy       /privacy-policy            301
-/terms         /legal-notice              301
+# Default audience on .fr is French
+/* https://creativeai-tools.com/fr/:splat 301!
 
-# Pages légales françaises
-/fr/legal      /fr/mentions-legales        301
-/fr/privacy    /fr/politique-de-confidentialite  301
-/fr/terms      /fr/mentions-legales        301
-
-# Redirections d'URLs courantes
-/features      /#features                  301
-/pricing       https://invideo.sjv.io/3JrYry  301
-/fr/tarifs     https://invideo.sjv.io/3JrYry  301
-
-# Blog - redirections d'URLs anciennes
-/blog/invideo-review       /blog/invideo-ai-review           301
-/fr/blog/avis-invideo      /fr/blog/avis-invideo-ai          301
-
-# Normalisation des URLs (évite les doublons .html)
-/privacy-policy.html                /privacy-policy                 301
-/legal-notice.html                  /legal-notice                   301
-/fr/politique-de-confidentialite.html /fr/politique-de-confidentialite 301
-/fr/mentions-legales.html           /fr/mentions-legales            301
-/blog/invideo-ai-review.html        /blog/invideo-ai-review         301
-/fr/blog/avis-invideo-ai.html       /fr/blog/avis-invideo-ai        301
-/blog/invideo-ai-update-2025.html   /blog/invideo-ai-update-2025    301
-/fr/blog/mise-a-jour-invideo-2025.html /fr/blog/mise-a-jour-invideo-2025 301
-
-# Sitemaps
-/sitemap                    /sitemap.xml                    200
-/sitemap_en                /sitemaps/sitemap-en.xml        200
-/sitemap_fr                /sitemaps/sitemap-fr.xml        200
-
-# Gestion des erreurs 404
-
-# ==========================================================================
-# Redirections de secours pour les URLs sans trailing slash
-# ==========================================================================
-
-/blog/         /blog/index.html        200
-/fr/blog/      /fr/blog/index.html     200
-
-# Gestion des erreurs 404 (à garder en dernier)
-/*                          /404.html                       404

@@ -4,7 +4,7 @@
 
 [build]
   publish = "."
-  command = "echo 'No build command needed - static site'"
+  command = "node scripts/ping-indexnow.cjs"
 
 [build.environment]
   NODE_VERSION = "18"
